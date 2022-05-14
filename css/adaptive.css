@@ -16,14 +16,6 @@
 
 @media screen and (max-width: 1091px) {
 
-    .phone {
-        display: flex;
-    }
-
-    .phone .phone-number {
-        margin: 0 20px;
-    }
-
     .orderCall {
         margin-top: 0;
     }
@@ -41,6 +33,11 @@
         order: 3;
         width: 100%;
         margin: 20px;
+        justify-content: center;
+    }
+
+    #menu a {
+        margin: 7px 15px;
     }
 
     #header .phone {
@@ -78,6 +75,9 @@
 
 /* 768 - 1023 */
 @media screen and (max-width: 1023px) {
+    #form-block {
+        height: 1071px;
+    }
 
     .feature {
         padding: 27px 30px;
@@ -93,10 +93,9 @@
 
     .navigation-adaptive {
         display: flex;
-        width: 265px;
         align-items: center;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     #photos-slider-adaptive {
@@ -260,7 +259,7 @@
     }
 
     #form-block {
-        height: 1161px;
+        height: 1158px;
     }
 
     #newsletter {
@@ -282,7 +281,7 @@
 @media screen and (max-width: 630px) {
 
     #photos-slider-adaptive .slick-slide img {
-        width: 72%;
+        width: 100%;
         border-radius: 15px;
     }
 
@@ -303,21 +302,9 @@
 /* 480 - 579 */
 @media screen and (max-width: 579px) {
 
-  /*   #var-main .var {
-        width: 86%;
+    body {
+        background: #FFFFFF;
     }
-
-    #var-container .var .var-info {
-        margin: 25px 0 25px 25px;
-    }
-
-    #var-container .var .var-title {
-        font-size: 16px;
-    }
-
-    #var-container .var .var-text {
-        font-size: 14px;
-    } */
 
     .photos-title {
         font-size: 30px;
@@ -393,7 +380,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: 160px;
+        width: 175px;
         margin: 0 auto;
     }
 

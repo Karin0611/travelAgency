@@ -7,8 +7,8 @@ $(document).ready(() => {
         infinite: true,
         dots: true,
         appendDots: $('.dots-photos'),
-        prevArrow:  prev,
-        nextArrow: next,
+        prevArrow:  $('.prev-photo'),
+        nextArrow: $('.next-photo'),
         slidesToShow: 1,
         slidesToScroll: 1
     });
@@ -16,8 +16,8 @@ $(document).ready(() => {
     $('#photos-slider-adaptive').slick({
         dots: true,
         appendDots: $('.dots-photos-adaptive'),
-        prevArrow:  prev,
-        nextArrow: next,
+        prevArrow:  $('.prev-photo-adaptive'),
+        nextArrow: $('.next-photo-adaptive'),
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -30,8 +30,8 @@ $(document).ready(() => {
         infinite: true,
         dots: true,
         appendDots: $('.dots'),
-        prevArrow:  prev,
-        nextArrow: next,
+        prevArrow:  $('.prev'),
+        nextArrow: $('.next'),
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -61,8 +61,8 @@ $(document).ready(() => {
         infinite: true,
         dots: true,
         appendDots: $('.dots-rev'),
-        prevArrow:  prev,
-        nextArrow: next,
+        prevArrow:  $('.prev-rev'),
+        nextArrow: $('.next-rev'),
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
@@ -82,8 +82,8 @@ $(document).ready(() => {
         infinite: true,
         dots: true,
         appendDots: $('.dots-rev-adaptive'),
-        prevArrow:  prev,
-        nextArrow: next,
+        prevArrow:  $('.prev-rev-adaptive'),
+        nextArrow: $('.next-rev-adaptive'),
         slidesToShow: 1,
         slidesToScroll: 1,
     });
@@ -108,7 +108,7 @@ $(document).ready(() => {
             $('#order-call-sent').show();
             $('#order-call-content').hide();
         } else {
-            $('.form-error').show();
+            $('.popup-error').show();
             number.css('border', 'solid 2px red');
         }
     });

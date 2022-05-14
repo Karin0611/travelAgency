@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: MontsSemi;
-    src: url("../fonts/Montserrat-Semibold.ttf");
+    src: url("../fonts/Montserrat-SemiBold.ttf");
 }
 
 
@@ -52,7 +52,7 @@ line-height: 30px;
 #header {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 21px 15px 0 15px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +105,10 @@ line-height: 30px;
     margin: 7px 0;
 }
 
+#main-phone {
+    margin-top: 20px;
+}
+
 .phone-number {
     font-size: 16px;
     font-family: MontsBold, sans-serif;
@@ -112,7 +116,7 @@ line-height: 30px;
 }
 
 .orderCall {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #phone-burger {
@@ -124,6 +128,7 @@ line-height: 30px;
 }
 
 .orderCall a {
+    text-decoration: underline;
     vertical-align: middle;
     font-size: 14px;
     font-family: MontsBold, sans-serif;
@@ -135,10 +140,9 @@ line-height: 30px;
     display: flex;
     flex-wrap: wrap;
     max-width: 1140px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
-    justify-content: space-evenly;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
 .video iframe {
@@ -155,6 +159,7 @@ line-height: 30px;
     font-family: PhilBold, sans-serif;
     color: rgb(255, 243, 225);
     width: 603px;
+    line-height: 1.09;
 }
 
 .main-text {
@@ -231,13 +236,15 @@ line-height: 30px;
 
 
 
-.container {
+ .container {
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 935px;
+
+    padding: 0;
+     column-gap: 40px;
 }
 
  .feature {
@@ -258,7 +265,7 @@ line-height: 30px;
     border-top: 3px solid #fff5c9;
     position: absolute;
     top: -3px;
-    left: 35%;
+    left: 40%;
 }
 
  .feature-text {
@@ -278,8 +285,8 @@ line-height: 30px;
     font-family: PhilBold, sans-serif;
     color: rgb(42, 41, 39);
     position: absolute;
-    top: -54px;
-    left: 42%;
+    top: -63px;
+    left: 45%;
 }
 
 #features .container .feature .feature-text #first-span {
@@ -296,8 +303,8 @@ line-height: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 20px auto auto auto;
 }
+
 
 #var-main {
     max-width: 1140px;
@@ -347,7 +354,6 @@ line-height: 30px;
     font-size: 15px;
     font-family: MontsReg, sans-serif;
     color: rgb(42, 41, 39);
-    line-height: 1.533;
     text-align: left;
     max-width: 267px;
 }
@@ -364,7 +370,8 @@ line-height: 30px;
 #small-container {
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    max-width: 618px;
+    justify-content: space-between;
 }
 
 #small-container .article .first-small-span {
@@ -432,13 +439,13 @@ line-height: 30px;
     font-size: 18px;
     font-family: MontsBold, sans-serif;
     color: rgb(42, 41, 39);
-    margin: 15px 0;
 }
 
 #offers .offer .offer-text {
     font-size: 15px;
     font-family: MontsReg, sans-serif;
     color: rgb(42, 41, 39);
+    margin: 10px 0;
 }
 
 #offers .offer .offer-text  span {
@@ -501,9 +508,8 @@ line-height: 30px;
 
  .navigation {
     display: flex;
-    width: 178px;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: -10px auto;
+    justify-content: center;
      align-items: center;
 }
 
@@ -541,19 +547,19 @@ display: flex;
 #photos-slider  {
     max-width: 1120px;
     margin: 0 auto;
-    display: block;
+
 }
 
 #photos-slider .photos-slide {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
 }
 
 #photos-slider .block .block-photo {
     display: flex;
     justify-content: space-between;
 }
-
 
 #photos-slider img {
  margin: 5px;
@@ -563,6 +569,10 @@ display: flex;
 #photos-slider .row img {
     border-radius: 15px;
     max-height: 550px;
+}
+
+#photos-slider-adaptive .slick-slide {
+    margin: 0 50px;
 }
 
 #reviews {
@@ -628,7 +638,7 @@ display: flex;
 #form-block {
     background: url('../images/lastBG.png');
     background-position: center;
-    height: 1090px;
+    height: 1017px;
     background-size: cover;
     margin-top: 160px;
 }
@@ -652,6 +662,7 @@ display: flex;
 #form-button .btn-yellow {
     width: 250px;
     height: 60px;
+    outline: none;
 }
 
 #form-container .main-text {
@@ -674,13 +685,14 @@ border-radius: 28px;
 }
 
 #form .reserve-input input::placeholder {
-    color: black;
+    color: #2a2927;
     font-size: 15px;
 }
 
 #form-block-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 75px;
 }
 
 #balloon-container {
@@ -862,12 +874,23 @@ background: rgba(0, 0, 0, 0.78);
     vertical-align: middle;
 }
 
-.form-error {
+.form-error, .popup-error {
     color: red;
     font-size: 13px;
     font-family: MontsReg, sans-serif;
     font-weight: bold;
     display: none;
+    text-align: left;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.form-error span {
+    margin-left: 24px;
+}
+
+.popup-error span {
+    margin-left: 24px;
 }
 
 #thanks {
@@ -1158,4 +1181,8 @@ z-index: 515;
 
 #adaptive-video {
     display: none;
+}
+
+.dots, .dots-photos, .dots-rev, .dots-photos-adaptive, .dots-rev-adaptive {
+    margin: 0 30px;
 }
